@@ -462,10 +462,10 @@ body.gate-active {
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.46) 0%,
-    rgba(255, 255, 255, 0.32) 30%,
-    rgba(255, 255, 255, 0.40) 70%,
-    rgba(250, 246, 240, 0.65) 100%
+    rgba(250, 246, 240, 0.15) 0%,
+    rgba(250, 246, 240, 0.05) 30%,
+    rgba(250, 246, 240, 0.10) 70%,
+    rgba(250, 246, 240, 0.30) 100%
   );
   pointer-events: none;
 }
@@ -576,7 +576,7 @@ body.gate-active {
   margin-bottom: 6px;
   opacity: 0;
   animation: fadeUp 1s ease 0.6s forwards;
-  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+  text-shadow: none;
 }
 
 .hero-welcoming {
@@ -589,7 +589,7 @@ body.gate-active {
   margin-bottom: 12px;
   opacity: 0;
   animation: fadeUp 1s ease 0.8s forwards;
-  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+  text-shadow: none;
 }
 
 .hero-names {
@@ -608,7 +608,7 @@ body.gate-active {
   color: #2E101A;
   line-height: 0.92;
   letter-spacing: 0.01em;
-  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.95), 0 0 25px rgba(255, 255, 255, 0.85), 0 4px 20px rgba(74, 14, 36, 0.25);
+  text-shadow: 0 2px 10px rgba(250,246,240,0.8), 0 0 20px rgba(250,246,240,0.5);
 }
 
 .hero-name-groom::first-letter,
@@ -617,7 +617,7 @@ body.gate-active {
   font-size: 1.15em;
   font-weight: 700;
   color: #7A1230;
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.9);
+  text-shadow: none;
 }
 
 .hero-and {
@@ -627,7 +627,7 @@ body.gate-active {
   color: #9E782F;
   margin: 4px 0;
   line-height: 1;
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.95);
+  text-shadow: none;
 }
 
 .hero-love-tag {
@@ -683,12 +683,12 @@ body.gate-active {
   flex-direction: column;
   align-items: center;
   padding: 14px 34px 16px;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(195, 148, 48, 0.55);
+  border: 1px solid rgba(195, 148, 48, 0.4);
   border-radius: 8px;
-  box-shadow: 0 10px 35px rgba(74, 14, 36, 0.12), 0 2px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 35px rgba(201, 56, 92, 0.08), 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 .hero-date-day {
@@ -743,7 +743,7 @@ body.gate-active {
 .scroll-mouse {
   width: 24px;
   height: 38px;
-  border: 2px solid rgba(248, 235, 215, 0.6);
+  border: 2px solid rgba(143, 102, 8, 0.4);
   border-radius: 12px;
   position: relative;
 }
@@ -1975,6 +1975,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
   filter: sepia(8%) saturate(95%);
   transition: var(--transition);
 }
