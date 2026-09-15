@@ -3374,3 +3374,20 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(212,160,23,0.3);
 }
+
+/* Combined couple photo above the cards */
+.couple-combined-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0 2rem;
+}
+
+.couple-combined-photo img {
+  width: min(500px, 92%);
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
